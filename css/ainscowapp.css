@@ -1,0 +1,18 @@
+
+.axis path,.axis line {fill: none;stroke:#b6b6b6;shape-rendering: crispEdges;}
+
+.chart {
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+ion-item {
+    cursor:pointer
+}
+.chart text {
+    font-size: 75%;
+}
+
+
+

@@ -1,0 +1,15 @@
+<ion-view view-title="Metrics" class="has-header">
+    <ion-nav-buttons side="secondary">
+        <a class="button button-icon icon ion-home" ui-sref="ainscow.home"></a>
+    </ion-nav-buttons> 
+    <ion-content>
+        <div class="list">
+            <label class="item item-radio" ng-repeat="metric in metrics">
+                <input type="radio" name="group" ng-model="selectedMetric.selectedMetric" value="{{metric.title}}" ng-change="writePrefs()">
+                <div class="item-content">
+                    {{metric.title}}
+                </div>
+                <i class="radio-icon ion-checkmark"></i></label>               
+        </div>
+    </ion-content>
+</ion-view>

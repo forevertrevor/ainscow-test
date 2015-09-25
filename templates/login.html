@@ -1,0 +1,30 @@
+<ion-view title="ainscow login">
+    <ion-content>
+        <div class="row padding-bottom">
+            <div class="col">
+                <h3>ainscow</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">                
+                <label class="item item-input">                
+                    <input type="text" placeholder="Username" ng-focus="clearErrors()" ng-model="username">
+                </label>               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">                
+                <label class="item item-input">               
+                    <input type="password" placeholder="Password" ng-focus="clearErrors()" ng-model="password">
+                </label>
+            </div>
+        </div>
+        <div class="row"> 
+
+            <button on-tap="login()" class="button button-full" ng-class="{'button-positive':loginService.noErrors,'button-assertive':loginService.noErrors===false}">{{loginService.buttonText}}</button>
+
+        </div>
+        <!-- ion-spinner ng-show="loading" icon="android"></ion-spinner -->
+
+    </ion-content>
+</ion-view>
