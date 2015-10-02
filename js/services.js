@@ -15,6 +15,7 @@ services.factory('LoginService', function (uiService, $http, DataService, $ionic
                         $state.go('ainscow.home');
                     },
                     loginFailed = function (response) {
+                        console.log(JSON.stringify(response));
                         loginService.loginError(response.status, response.statusText);
                         loginService.noErrors = false;
                     };
@@ -30,7 +31,7 @@ services.factory('LoginService', function (uiService, $http, DataService, $ionic
             this.noErrors = true;
         },
         loginError: function (status, statusText) {
-            console.log("Login failed: ",status," Reason: ",statusText);
+            console.log("Login failed: "+ status +" Reason: " + statusText);
             this.noErrors = false;
             switch (status) {
                 case 401 :

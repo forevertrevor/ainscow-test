@@ -39,4 +39,7 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
+  <gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" version="1.1.1" />
+  <access origin="http://198.211.127.213:8080/*" />
+  
 </widget>
